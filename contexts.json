@@ -1,0 +1,13 @@
+{
+  "_comment": [
+    "Calibrated operating points per imaging context (per-site threshold sweep, PROPOSAL_NOTES 17 Sep 2026).",
+    "point_thr is what moves the count; seg_thr and the watershed surface rarely need touching.",
+    "Explicit CLI flags override the context."
+  ],
+  "default": "wet_rows",
+  "contexts": {
+    "wet_rows":   {"label": "Wet camp, tarpaulin shelter rows (Kutupalong)",           "point_thr": 0.3, "seg_thr": 0.5, "surface": "mix"},
+    "mixed_camp": {"label": "Mixed camp (Chakmarkul)",                                  "point_thr": 0.4, "seg_thr": 0.5, "surface": "mix"},
+    "arid_urban": {"label": "Arid / tin roofs / urban (Kakuma, N'Djamena, Nairobi)",    "point_thr": 0.5, "seg_thr": 0.5, "surface": "mix"}
+  }
+}

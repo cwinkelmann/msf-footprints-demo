@@ -1,0 +1,11 @@
+models/*
+!models/.gitkeep
+outputs/
+examples/out*/
+__pycache__/
+gui_jobs/
+.venv/
+*.log
+out_camp/
+stretch_input.json
+.idea/
