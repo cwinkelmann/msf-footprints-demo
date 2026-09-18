@@ -3,6 +3,7 @@
 # so the inference numerics match the validation report. CUDA 12.4 runs on an A10G (g5.4xlarge)
 # and on consumer cards; without a GPU the same image falls back to CPU (--device auto).
 FROM pytorch/pytorch:2.4.0-cuda12.4-cudnn9-runtime
+LABEL org.opencontainers.image.source=https://github.com/cwinkelmann/msf-footprints-demo
 
 # git: pip install from GitHub. libgl1/libglib2.0/libxcb1: opencv (a dependency of animaloc) links them
 # even in a headless container.
